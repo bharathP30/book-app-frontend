@@ -4,6 +4,7 @@ import LogIn from "./LogIn";
 
 
 export default function Authpage({ setAuth, API_URL }){
+    console.log(API_URL);
     const [showSignUp, setshowSignUp] = useState(false);
   
     const style = 'w-1/2 rounded-md text-center text-black cursor-pointer'

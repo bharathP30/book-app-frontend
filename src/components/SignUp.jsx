@@ -2,7 +2,8 @@ import { useState } from "react";
 
 
 export default function SignUp ({ setAuth, API_URL }) {
-  
+    console.log(API_URL);
+    
     const [formData, setFormData] = useState({
         name: "",
         email: "",

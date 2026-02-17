@@ -1,7 +1,8 @@
 import { useState } from "react"
 
 export default function LogIn ({ setAuth, API_URL }) {
-
+    console.log(API_URL);
+    
     const [formData, setFormData] = useState({
         email: "",
         password: "",
