@@ -1,9 +1,8 @@
 import { useState } from "react";
 
 
-export default function SignUp ({ setAuth }) {
-    const API_URL = "http://localhost:3000/api";
-
+export default function SignUp ({ setAuth, API_URL }) {
+  
     const [formData, setFormData] = useState({
         name: "",
         email: "",

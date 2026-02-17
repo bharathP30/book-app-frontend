@@ -181,7 +181,7 @@ function App() {
                 />
       <div>
         <select name="filter" id="bookFilter"  value={filter} onChange={(e)=> setFilter(e.target.value)}>
-          <option value="" selected>ALL</option>
+          <option value="">ALL</option>
           <option value="science">Science</option>
           <option value="economy">Economy</option>
           <option value="politics">Politics</option>
