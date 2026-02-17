@@ -3,7 +3,7 @@ import SignUp from "./SignUp";
 import LogIn from "./LogIn";
 
 
-export default function Authpage({ setAuth }){
+export default function Authpage({ setAuth, API_URL }){
     const [showSignUp, setshowSignUp] = useState(false);
   
     const style = 'w-1/2 rounded-md text-center text-black cursor-pointer'
@@ -20,8 +20,8 @@ export default function Authpage({ setAuth }){
                         >Log In</button>
                     </div>
                     <div className="p-4">
-                        {showSignUp && <SignUp setAuth={setAuth} />}
-                        {!showSignUp && <LogIn setAuth={setAuth} />}
+                        {showSignUp && <SignUp setAuth={setAuth} API_URL={API_URL}/>}
+                        {!showSignUp && <LogIn setAuth={setAuth} API_URL={API_URL}/>}
                     </div>
                 </div>
 

@@ -167,7 +167,7 @@ function App() {
 
   if(!auth) {
     return (
-      <Authpage setAuth={setAuth}/>
+      <Authpage setAuth={setAuth} API_URL={apiURL}/>
     )
   }
 
