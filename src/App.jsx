@@ -25,7 +25,12 @@ function App() {
   const [filter, setFilter] = useState("");
 
   const [books, setBooks] = useState([]);
-  const booksURL = "http://localhost:3000/api/books";
+
+  const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
+  const apiURL = `${BASE_URL}/api`;
+  const booksURL = `${BASE_URL}/api/books`;
+
 
   const [loading, setLoading] = useState(false);
   console.log("running ", auth?.token);
