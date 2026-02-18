@@ -26,7 +26,7 @@ function App() {
 
   const [books, setBooks] = useState([]);
 
-  const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+  const BASE_URL = import.meta.env.VITE_API_URL // || "http://localhost:3000";
   const apiURL = `${BASE_URL}/api`;
   const booksURL = `${BASE_URL}/api/books`;
   console.log(BASE_URL);

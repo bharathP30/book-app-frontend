@@ -15,7 +15,7 @@ export default function SignUp ({ setAuth, API_URL }) {
         
         try {
                 console.log(formData);
-                const res = await fetch(`${API_URL}/auth/SignUp`, {
+                const res = await fetch(`${API_URL}/auth/signup`, {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

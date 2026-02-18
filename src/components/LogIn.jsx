@@ -12,7 +12,7 @@ export default function LogIn ({ setAuth, API_URL }) {
         e.preventDefault();
         
         try {
-            const res = await fetch(`${API_URL}/auth/LogIn`, {
+            const res = await fetch(`${API_URL}/auth/login`, {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",
